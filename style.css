@@ -1,0 +1,109 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Georgia', serif;
+}
+
+/* Hero Section with Background */
+.hero-section {
+  background-image: url("image.png"); /* ✅ Make sure image is in same folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Hover effect on nav links */
+.navbar ul li a:hover {
+  color: #ffcc00; /* Yellow hover */
+  text-decoration: underline;
+}
+
+/* Hero Content Styling */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.opening {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.details {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Buy Ticket Button */
+.btn {
+  background-color: white;
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #ffcc00;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Responsive Text Resize */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
